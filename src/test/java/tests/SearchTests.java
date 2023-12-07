@@ -17,7 +17,7 @@ public class SearchTests extends TestBase {
                     $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Appium");
                 });
         step("Type search", ()->
-            $$(id("org.wikipedia.alpha:id/page_list_item_description\n"))
+            $$(id("org.wikipedia.alpha:id/page_list_item_description"))
                     .shouldHave(sizeGreaterThan(0)));
     }
 }
