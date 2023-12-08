@@ -16,7 +16,7 @@ public class SearchTests extends TestBase {
                     $(accessibilityId("Search Wikipedia")).click();
                     $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Appium");
                 });
-        step("Type search", ()->
+        step("Verify content found", ()->
             $$(id("org.wikipedia.alpha:id/page_list_item_description"))
                     .shouldHave(sizeGreaterThan(0)));
     }
